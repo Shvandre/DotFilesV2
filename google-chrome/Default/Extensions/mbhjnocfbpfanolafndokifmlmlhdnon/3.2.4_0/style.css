@@ -1,0 +1,569 @@
+:root {
+  --background-color: #ffffff;
+  --main-text-color: #2D333A;
+  --action-color: #3B82F6;
+  --action-text-color: #ffffff;
+  --initial-color: #aaaaaa;
+  --loading-color: #3B82F6;
+  --secondary-color: #E7E7E7;
+  --success-color: #33CC8C;
+  --error-color: #FF6969;
+  --base-font-size: 12px;
+  --title-font-size: 22px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 240px;
+  background-color: var(--background-color);
+  padding: 24px;
+  text-align: center;
+  font-family: Roboto, Inter, Arial, sans-serif;
+  font-size: var(--base-font-size);
+}
+
+#header {
+  margin-bottom: 24px;
+}
+
+#icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+}
+
+#title {
+  text-align: left;
+  font-size: var(--title-font-size);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+#description {
+  text-align: left;
+}
+
+h1 {
+  color: var(--main-text-color);
+  text-align: center;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+  letter-spacing: 0.18px;
+
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-block-start: 0px;
+  margin-block-end: 1em;
+}
+
+a {
+  color: var(--main-text-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.status {
+  cursor: pointer;
+  width: 120px; /* adjust as needed */
+  height: 120px;
+  border-radius: 50%;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.3); /* Clean shadow */
+  transition: box-shadow 0.3s ease, fill 0.3s ease, color 0.3s ease;
+}
+
+.circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--background-color); /* color changes based on status */
+  border: 9px solid var(--initial-color);
+}
+
+.switch-icon {
+  width: 38px;
+  height: 38px;
+  position: relative;
+}
+
+.switch-icon svg path,  .switch-icon svg rect {
+  fill: var(--initial-color);
+}
+
+.connect-button-label {
+  position: relative;
+  margin-bottom: 0;
+  color: var(--initial-color);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.red {
+  color: var(--error-color) !important;
+}
+
+.circle,
+.switch-icon svg path,
+.switch-icon svg rect,
+.connect-button-label {
+    transition: border-color 0.3s ease, fill 0.3s ease, color 0.3s ease;
+}
+
+.status.disconnected .circle,
+.status.disconnected .switch-icon svg path,
+.status.disconnected .switch-icon svg rect,
+.status.disconnected .connect-button-label {
+    border-color: var(--initial-color);
+    fill: var(--initial-color);
+    color: var(--initial-color);
+}
+
+.status.connected .circle,
+.status.connected .switch-icon svg path,
+.status.connected .switch-icon svg rect,
+.status.connected .connect-button-label {
+    border-color: var(--success-color);
+    fill: var(--success-color);
+    color: var(--success-color);
+}
+
+.status.connecting .circle,
+.status.connecting .switch-icon svg path,
+.status.connecting .switch-icon svg rect,
+.status.connecting .connect-button-label {
+    fill: var(--loading-color);
+    color: var(--loading-color);
+}
+
+.status.connecting .circle {
+    animation: spin 2s linear infinite; /* Animation applied here */
+    border-top-color: var(--loading-color);
+}
+
+/* Error state styles */
+.status.error .circle,
+.status.error .switch-icon svg path,
+.status.error .switch-icon svg rect,
+.status.error .connect-button-label {
+    border-color: var(--error-color);
+    fill: var(--error-color);
+    color: var(--error-color);
+}
+
+.status.connecting {
+  box-shadow: none;
+}
+
+.upsaleButtons {
+  margin: 20px 0;
+  display: none;
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+button {
+  transition: background-color 0.3s ease;
+  font-size: var(--base-font-size);
+  cursor: pointer;
+}
+
+button.fullSizeButton {
+  width: 100%;
+  border: none;
+  margin: 5px auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: var(--base-font-size);
+}
+
+button.secondaryButton {
+  background-color: var(--secondary-color);
+  color: var(--main-text-color);
+}
+
+button.actionButton {
+  background-color: var(--action-color);
+  color: var(--action-text-color)
+}
+
+button.minorButton {
+  border: none;
+  background-color: transparent;
+  color: var(--initial-color);
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+#account {
+  border: 2px solid var(--secondary-color);
+  border-radius: 16px;
+  padding: 12px;
+}
+
+#removeLimitButton {
+  margin: 0px;
+}
+
+#paidSubscriptionData {
+  margin-bottom: 0px;
+}
+
+.h {
+  display: none;
+}
+
+.v {
+  display: initial;
+}
+
+.last {
+  margin-bottom: 0px !important;
+}
+
+/* Style for the overlay that covers the entire screen */
+.overlay {
+  display: none;
+  position: fixed; /* Fixed position to cover the whole screen */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  z-index: 1000; /* High z-index to ensure it's on top */
+}
+
+/* Style for the white content box inside the overlay */
+.overlayContent {
+  position: relative;
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+  border-radius: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
+  max-width: 500px;
+  min-height: 20%;
+  padding: 16px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.largeOverlay > .overlayContent {  /* BROKEN ??? */
+  text-align: left;
+  margin: 8px;
+  padding: 16px;
+}
+
+.overlayContent > h2 {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-block-start: 0px;
+}
+
+.overlayContent > h2:nth-of-type(2) {
+  margin-top: 18px;
+}
+
+.overlayContent > h2 > a {
+  text-decoration: none;
+}
+
+/* Style for the close button */
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: none;
+  line-height: 22px;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--main-text-color);
+  opacity: 0.4;
+}
+
+.termsOfService {
+  opacity: 0.8;
+  margin-top: 20px;
+}
+
+.hint {
+  opacity: 0.8;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  margin-left: 8px;
+  padding: 0px;
+  text-align: left;
+  font-size: var(--base-font-size);
+}
+
+.help {
+  color: var(--main-text-color);
+  font-size: var(--base-font-size);
+  margin-top: 20px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.overlayContent input {
+  width: 100%;
+  height: 34px;
+  border: 2px solid var(--secondary-color);
+  margin: 5px 0px;
+  box-sizing: border-box;
+  padding: 0px 12px;
+  border-radius: 8px;
+  color: var(--main-text-color);
+  font-size: var(--base-font-size);
+  text-align: center;
+}
+
+.largeOverlay > .overlayContent > input {
+  text-align: left;
+}
+
+::placeholder {
+  color: var(--main-text-color);
+  opacity: 0.7; /* Firefox */
+}
+
+#explainButton {
+  cursor: pointer;
+}
+
+
+/* LOADER */
+.lds-dual-ring {
+  /* change color here */
+  color: var(--action-color);
+}
+.lds-dual-ring,
+.lds-dual-ring:after {
+  box-sizing: border-box;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6.4px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* END LOADER */
+
+#countdownTimer {
+  font-size: 20px;
+  letter-spacing: 0.18px;
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+}
+
+#userEmail {
+  white-space: nowrap;        /* Prevents text from wrapping to the next line */
+  overflow: hidden;           /* Hides overflowed text */
+  text-overflow: ellipsis;    /* Adds ellipsis (...) at the end of the text */
+  max-width: 200px;           /* Set a maximum width for the element */
+  display: inline-block;      /* Ensure the element is treated as inline-block */
+}
+
+#userEmail2 {
+  width: 100%;
+  text-align: center;
+}
+
+/* Payment Modal Styles - Compact List Layout */
+.payment-options.payment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.payment-options.payment-list .payment-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-options.payment-list .payment-option:hover {
+  border-color: var(--action-color);
+}
+
+.payment-options.payment-list .payment-option:has(input[type="radio"]:checked) {
+  border-color: var(--action-color);
+  box-shadow: 0 0 0 1px var(--action-color);
+  background-color: rgba(var(--action-color-rgb, 0, 123, 255), 0.05);
+}
+
+.payment-options.payment-list .payment-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-circle {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.payment-option input[type="radio"]:checked ~ .radio-circle {
+  border-color: var(--action-color);
+}
+
+.payment-option input[type="radio"]:checked ~ .radio-circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--action-color);
+}
+
+.payment-options.payment-list .option-content {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.payment-options.payment-list .option-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.payment-options.payment-list .option-price {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.payment-options.payment-list .option-old-price {
+  text-decoration: line-through;
+  opacity: 0.7;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.payment-options.payment-list .option-discount {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.payment-terms {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#goToPaymentButton {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#goToPaymentButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Remove the previous grid styles */
+.payment-options.payment-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Small button loader */
+.button-loader.lds-dual-ring {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    color: var(--action-text-color); /* Change color to match button text */
+}
+
+.button-loader.lds-dual-ring:after {
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    border-width: 2px;
+}
+
+/* Ensure button content stays centered when loading */
+#goToPaymentButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px; /* Prevent height changes when switching to loader */
+}
+
+/* Payment button error message */
+.payment-error-message {
+    display: none;
+    color: #DC1C1C;
+    font-size: 13px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.payment-error-message.visible {
+  display: block;
+}

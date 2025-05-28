@@ -1,0 +1,27 @@
+2025/05/28-15:18:08.571 56a Reusing MANIFEST /home/b4cksl4sh/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2025/05/28-15:18:10.793 56a Recovering log #52
+2025/05/28-15:18:10.871 56a Reusing old log /home/b4cksl4sh/.config/google-chrome/Default/Sync Data/LevelDB/000052.log 
+2025/05/28-17:00:55.981 599 Level-0 table #56: started
+2025/05/28-17:00:56.237 599 Level-0 table #56: 109883 bytes OK
+2025/05/28-17:00:56.360 599 Delete type=0 #52
+2025/05/28-19:00:28.847 56a Level-0 table #58: started
+2025/05/28-19:00:32.036 56a Level-0 table #58: 96411 bytes OK
+2025/05/28-19:00:39.227 56a Delete type=0 #55
+2025/05/28-19:49:15.240 56b Level-0 table #60: started
+2025/05/28-19:49:15.271 56b Level-0 table #60: 114843 bytes OK
+2025/05/28-19:49:15.668 56b Delete type=0 #57
+2025/05/28-19:49:15.668 56b Compacting 4@0 + 1@1 files
+2025/05/28-19:49:18.372 56b Generated table #61@0: 403 keys, 94907 bytes
+2025/05/28-19:49:18.372 56b Compacted 4@0 + 1@1 files => 94907 bytes
+2025/05/28-19:49:18.645 56b compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/05/28-19:49:18.645 56b Delete type=2 #50
+2025/05/28-19:49:18.645 56b Delete type=2 #53
+2025/05/28-19:49:18.645 56b Delete type=2 #56
+2025/05/28-19:49:18.645 56b Delete type=2 #58
+2025/05/28-19:49:18.645 56b Delete type=2 #60
+2025/05/28-20:42:11.949 56b Level-0 table #63: started
+2025/05/28-20:42:12.064 56b Level-0 table #63: 112984 bytes OK
+2025/05/28-20:42:12.305 56b Delete type=0 #59
+2025/05/28-21:32:36.034 56b Level-0 table #65: started
+2025/05/28-21:32:36.148 56b Level-0 table #65: 100804 bytes OK
+2025/05/28-21:32:37.429 56b Delete type=0 #62

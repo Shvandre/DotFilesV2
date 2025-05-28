@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sandbox page</title>
+</head>
+<body><iframe src="https://aliradar.com" name="iframe_a" height="300px" width="100%" title="Iframe Example" >
+</iframe>
+
+<img src="https://aliradar.com/img/homepage-top.svg" alt="">
+
+<script lang="js" type="text/javascript">/* eslint-disable */
+window.addEventListener('message', (event) => {
+	const command = event.data.command;
+	const data = event.data.data;
+	try {
+			switch (command) {
+				case 'eval':
+					(function f() {
+						eval(data.script);
+					}());
+					event.source.postMessage(eval(data.path), event.origin);
+					break;
+
+        // case 'somethingElse':
+        //   ...
+			}
+	} catch (e) {
+			event.source.postMessage({ error: e }, event.origin);
+	}
+});
+</script>
+</body>
+</html>

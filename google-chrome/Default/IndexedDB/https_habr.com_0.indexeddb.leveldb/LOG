@@ -1,0 +1,6 @@
+2025/05/17-14:03:53.226 5dd Creating DB /home/b4cksl4sh/.config/google-chrome/Default/IndexedDB/https_habr.com_0.indexeddb.leveldb since it was missing.
+2025/05/17-14:03:53.757 5dd Reusing MANIFEST /home/b4cksl4sh/.config/google-chrome/Default/IndexedDB/https_habr.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/17-15:49:42.371 5de Level-0 table #5: started
+2025/05/17-15:49:42.396 5de Level-0 table #5: 1011 bytes OK
+2025/05/17-15:49:42.444 5de Delete type=0 #3
+2025/05/17-15:49:42.444 5de Manual compaction at level-0 from (begin) .. (end); will stop at (end)

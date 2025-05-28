@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VPN Наоборот</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="content-wrapper" class="container">
+
+        <div id="header" class="row">
+            <img src="icons/icon128.png" alt="Icon" id="icon">
+            <div>
+                <div id="title">VPN Наоборот</div>
+                <div id="description">Для доступа к российским сайтам из-за границы</div>
+            </div>
+        </div>
+
+        <div id="paymentOverlay" class="largeOverlay overlay">
+            <div class="overlayContent">
+                <div class="closeBtn">&times;</div>
+                <h2>Выберите тарифный план</h2>
+                <p>Безлимитный доступ к сервису</p>
+
+                <div class="payment-options payment-list">
+                    <label class="payment-option">
+                        <input type="radio" name="paymentPlan" value="monthly" data-price="590" data-period="1">
+                        <div class="radio-circle"></div>
+                        <div class="option-content">
+                            <div class="option-title">1 месяц</div>
+                            <div class="option-price">590₽</div>
+                        </div>
+                    </label>
+
+                    <label class="payment-option">
+                        <input type="radio" name="paymentPlan" value="biannual" data-price="2700" data-period="6" data-old-price="3540">
+                        <div class="radio-circle"></div>
+                        <div class="option-content">
+                            <div class="option-title">6 месяцев</div>
+                            <div class="option-old-price">3540₽ (590₽/мес)</div>
+                            <div class="option-price">2700₽ (450₽/мес)</div>
+                        </div>
+                    </label>
+
+                    <label class="payment-option">
+                        <input type="radio" name="paymentPlan" value="annual" data-price="3480" data-period="12" data-old-price="7080">
+                        <div class="radio-circle"></div>
+                        <div class="option-content">
+                            <div class="option-title">1 год</div>
+                            <div class="option-old-price">7080₽ (590₽/мес)</div>
+                            <div class="option-price">3480₽ (290₽/мес)</div>
+                        </div>
+                    </label>
+                </div>
+
+                <button id="goToPaymentButton" class="actionButton fullSizeButton" disabled>Перейти к оплате</button>
+                <div class="payment-error-message">Произошла ошибка. Попробуйте еще раз или обратитесь в поддержку</div>
+                <div class="payment-terms">
+                    Нажимая кнопку, вы соглашаетесь с <a href="https://vpn-naoborot.online/docs/oferta" target="_blank">условиями оферты</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="account">
+            <div class="row">
+                <div id="userEmail">👤  Ваш Аккаунт</div>
+                <button id="logoutButton" class="minorButton">Выйти</button>
+            </div>
+            <div class="subscriptionStatus">
+                <div id="timerData" class="">
+                    <div class="row">
+                        <div>⚠️  Сегодня осталось:</div>
+                        <button id="explainLimitButton" class="minorButton" overlay-target="removeLimitOverlay">Почему?</button>
+                    </div>
+                    <div class="row">
+                        <div id="countdownTimer">02:00:00</div>
+                    </div>
+                    <button id="removeLimitButton" class="actionButton fullSizeButton" overlay-target="removeLimitOverlay">Нужно больше</button>
+                </div>
+                <div id="paidSubscriptionData" class="row h">
+                    <div>✅  Оплачено</div>
+                    <!-- <button id="manageSubscriptionButton" class="minorButton" overlay-target="manageSubscriptionOverlay">Управлять</button> -->
+                </div>
+            </div>
+        </div>
+
+        <button id="mainButton" class="status disconnected">
+            <div class="circle"></div>
+            <div class="switch-icon">
+                <svg class="switch-icon" width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.01 7.85692C12.397 6.79511 11.0313 6.42259 10.036 7.13856C6.69544 9.54158 4.07578 12.8358 2.48988 16.6645C0.61971 21.1795 0.291604 26.1854 1.55645 30.9059C2.82129 35.6263 5.60839 39.7975 9.4855 42.7725C13.3626 45.7476 18.113 47.3601 23 47.3601C27.887 47.3601 32.6374 45.7476 36.5145 42.7725C40.3916 39.7975 43.1787 35.6263 44.4436 30.9059C45.7084 26.1854 45.3803 21.1795 43.5101 16.6645C41.9242 12.8358 39.3046 9.54159 35.964 7.13856C34.9687 6.42259 33.603 6.79511 32.99 7.85692V7.85692C32.377 8.91873 32.7513 10.266 33.7283 11.0066C36.2305 12.9033 38.1965 15.4385 39.4081 18.3636C40.9042 21.9756 41.1667 25.9804 40.1548 29.7567C39.143 33.5331 36.9133 36.8701 33.8116 39.2501C30.7099 41.6301 26.9096 42.9201 23 42.9201C19.0904 42.9201 15.2901 41.6301 12.1884 39.2501C9.08672 36.8701 6.85703 33.5331 5.84516 29.7567C4.83328 25.9804 5.09577 21.9756 6.5919 18.3636C7.80355 15.4385 9.76947 12.9033 12.2717 11.0066C13.2488 10.266 13.623 8.91873 13.01 7.85692V7.85692Z" fill="#565859"/>
+                    <rect x="20.78" width="4.44" height="14.8" rx="2.22" fill="#565859"/>
+                </svg>
+            </div>
+            <p id="mainButtonText" class="connect-button-label">Подключить</p>
+        </button>
+
+        <div class="help">
+            Нужна помощь? Напишите нам <a href="mailto:support@vpn-naoborot.online" target="_blank">на&nbsp;почту</a>&nbsp;или&nbsp;<a href="https://t.me/vpnnaoborot" target="_blank">в чат</a>.
+        </div>
+
+        <div class="overlays">
+
+            <div id="loginOverlay" class="overlay">
+                <div class="overlayContent">
+                    <h2>Регистрация и Вход</h2>
+                    <p></p>
+                    <form id="emailForm">
+                        <input type="email" placeholder="Введите Email" id="emailInput" name="email" required>
+                        <button type="submit" id="requestPasswordButton" class="actionButton fullSizeButton">Получить пароль</button>
+                        <button type="submit" id="alreadyHavePasswordButton" class="secondaryButton fullSizeButton">Войти</button>
+                    </form>
+                    <div class="termsOfService">Нажимая "Получить пароль", вы соглашаетесь с <a target="_blank" href="https://vpn-naoborot.online/docs/oferta" id="termsLink">офертой.</a></div>
+                    <div class="help">Нужна помощь? Напишите нам <a href="mailto:support@vpn-naoborot.online" target="_blank">на&nbsp;почту</a>&nbsp;или&nbsp;<a href="https://t.me/vpnnaoborot" target="_blank">в чат</a>.</div>
+                </div>
+            </div>
+
+            <div id="newPasswordOverlay" class="overlay">
+                <div class="overlayContent">
+                    <h2>Отправили пароль на&nbsp;почту</h2>
+                    <p>Придёт в течение 1-2 минут. Проверяйте папки спам и рассылки.</p>
+                    <input type="password" placeholder="Пароль из письма" class="register-input" id="passwordInput" name="password" required>
+                    <button class="loginButton actionButton fullSizeButton">Продолжить</button>
+                    <button class="secondaryButton fullSizeButton" overlay-target="loginOverlay">Назад</button>
+                    <div class="help">Нужна помощь? Напишите нам <a href="mailto:support@vpn-naoborot.online" target="_blank">на&nbsp;почту</a>&nbsp;или&nbsp;<a href="https://t.me/vpnnaoborot" target="_blank">в чат</a>.</div>
+                </div>
+            </div>
+
+            <div id="passwordOverlay" class="overlay">
+                <div class="overlayContent">
+                    <h2>Введите пароль</h2>
+                    <p>Если забыли, нажмите "Получить пароль" на предыдущем экране.</p>
+                    <input type="password" placeholder="Пароль" class="register-input" id="passwordInput2" name="password" required>
+                    <button class="loginButton actionButton fullSizeButton">Продолжить</button>
+                    <button class="secondaryButton fullSizeButton" overlay-target="loginOverlay">Назад</button>
+                    <div class="help">Нужна помощь? Напишите нам <a href="mailto:support@vpn-naoborot.online" target="_blank">на&nbsp;почту</a>&nbsp;или&nbsp;<a href="https://t.me/vpnnaoborot" target="_blank">в чат</a>.</div>
+                </div>
+            </div>
+
+            <div id="errorOverlay" class="overlay">
+                <div class="overlayContent">
+                    <h2>Ошибка</h2>
+                    <p>Попробуйте снова чуть позже. Возможно, пройдёт само. Если нет, напишите нам по ссылкам ниже.</p>
+                    <button class="actionButton fullSizeButton" overlay-target="loginOverlay">Назад</button>
+                    <div class="help">Нужна помощь? Напишите нам <a href="mailto:support@vpn-naoborot.online" target="_blank">на&nbsp;почту</a>&nbsp;или&nbsp;<a href="https://t.me/vpnnaoborot" target="_blank">в чат</a>.</div>
+                </div>
+            </div>
+
+            <div id="invalidPasswordOverlay" class="overlay">
+                <div class="overlayContent">
+                    <h2>Неверный email или пароль</h2>
+                    <p>Пожалуйста проверьте правильность email и пароля.</p>
+                    <p>Если всё правильно, но войти не получается, пожалуйста напишите нам по ссылкам ниже. Обязательно вам поможем!</p>
+                    <button class="actionButton fullSizeButton"  overlay-target="passwordOverlay">Назад</button>
+                    <div class="help">Нужна помощь? Напишите нам <a href="mailto:support@vpn-naoborot.online" target="_blank">на&nbsp;почту</a>&nbsp;или&nbsp;<a href="https://t.me/vpnnaoborot" target="_blank">в чат</a>.</div>
+                </div>
+            </div>
+
+            <div id="loadingOverlay" class="overlay">
+                <div class="overlayContent">
+                    <h2>Пожалуйста, подождите...</h2>
+                    <div class="loaderWrapper">
+                        <div class="lds-dual-ring"></div>
+                    </div>
+                    <div class="help">Нужна помощь? Напишите нам <a href="mailto:support@vpn-naoborot.online" target="_blank">на&nbsp;почту</a>&nbsp;или&nbsp;<a href="https://t.me/vpnnaoborot" target="_blank">в чат</a>.</div>
+                </div>
+            </div>
+
+            <div id="feedbackOverlay" class="overlay">
+                <div class="overlayContent">
+                    <div class="closeBtn">&times;</div>
+                    <h2>Всё работало хорошо?</h2>
+                    <button id="positiveFeedback" class="actionButton fullSizeButton">👍 Да, все отлично!</button>
+                    <button id="negativeFeedback" class="actionButton fullSizeButton">👎 Нет, были проблемы.</button>
+                </div>
+            </div>
+
+            <div id="positiveOverlay" class="overlay">
+                <div class="overlayContent">
+                    <div class="closeBtn">&times;</div>
+                    <h2>Пожалуйста, оцените нас:</h2>
+                    <a href="https://chromewebstore.google.com/detail/proxy-vpn-%D0%BD%D0%B0%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D1%82-%E2%80%93-%D0%B2%D0%BF%D0%BD/mbhjnocfbpfanolafndokifmlmlhdnon/reviews" target="_blank">
+                        <button class="actionButton fullSizeButton">⭐ Поставить оценку</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="negativeOverlay" class="overlay">
+                <div class="overlayContent">
+                    <div class="closeBtn">&times;</div>
+                    <h2>Пожалуйста расскажите, что пошло не так:</h2>
+                    <a href="https://noteforms.com/forms/kak-vam-vpn-naoborot-zuhsev?ed88b3fb-ea49-4b6f-9e40-1a3ff19e2901=chrome-extension" target="_blank">
+                        <button class="actionButton fullSizeButton">🤔 Оставить отзыв</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="removeLimitOverlay" class="largeOverlay overlay">
+                <div class="overlayContent">
+                    <div class="closeBtn">&times;</div>
+                    <h2>Бесплатно доступен <b>1&nbsp;час&nbsp;в&nbsp;день</b></h2>
+                    <p>Сервера дорогие, а мы хотим кушать. Если нужно больше времени, пожалуйста оплатите доступ.</p>
+                    <h2>Чтобы&nbsp;<b>получить&nbsp;безлимит</b>, оформите подписку на сайте <a target="_blank" href="https://vpn-naoborot.online/?utm_source=extension#application-form">vpn-naoborot.online</a></h2>
+                    <p>Используйте <b>ту же почту</b>, которую указывали при входе в расширение:</p>
+                    <p id="userEmail2"></p>
+                    <a id="purchaseLink" href="https://vpn-naoborot.online/?utm_source=extension#application-form" target="_blank"><button class="actionButton fullSizeButton">Перейти к оформлению подписки</button></a>
+                    <button class="secondaryButton fullSizeButton" overlay-target="applyDonationOverlay">🍩  Зачесть донат</button>
+                    <div class="help">Нужна помощь? Напишите нам <a href="mailto:support@vpn-naoborot.online" target="_blank">на&nbsp;почту</a>&nbsp;или&nbsp;<a href="https://t.me/vpnnaoborot" target="_blank">в чат</a>.</div>
+                </div>
+            </div>
+
+            <div id="applyDonationOverlay" class="largeOverlay overlay">
+                <div class="overlayContent">
+                    <div class="closeBtn">&times;</div>
+                    <h2>🍩  Зачесть донат</h2>
+                    <p>Мы очень благодарны всем, кто отправлял пожертвования! Поэтому увеличим для вас время бесплатного доступа.</p>
+                    <p>Для этого пожалуйста укажите, сколько и когда отправляли средств.</p>
+                    <form id="donationForm">
+                        <input type="number" placeholder="Сумма пожертвования (Руб.)" id="donationAmountInput" name="donationAmountInput" required>
+                        <input type="date" placeholder="Дата" id="donationDateInput" name="donationDateInput" required>
+                        <button type="submit" class="actionButton fullSizeButton last">Получить бонус</button>
+                    </form>
+                    <div class="help">Нужна помощь? Напишите нам <a href="mailto:support@vpn-naoborot.online" target="_blank">на&nbsp;почту</a>&nbsp;или&nbsp;<a href="https://t.me/vpnnaoborot" target="_blank">в чат</a>.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="feedback.js"></script>
+    <script src="subscription.js"></script>
+    <script src="popup.js"></script>
+
+</body>
+</html>

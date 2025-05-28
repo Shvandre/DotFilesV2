@@ -1,0 +1,21 @@
+2025/05/28-14:34:50.104 4 Reusing MANIFEST /home/b4cksl4sh/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2025/05/28-14:34:50.401 4 Recovering log #112
+2025/05/28-14:34:51.009 4 Reusing old log /home/b4cksl4sh/.config/google-chrome/Default/Local Storage/leveldb/000112.log 
+2025/05/28-14:35:42.516 5 Level-0 table #116: started
+2025/05/28-14:35:42.570 5 Level-0 table #116: 15181 bytes OK
+2025/05/28-14:35:42.689 5 Delete type=0 #112
+2025/05/28-14:35:42.690 5 Compacting 4@0 + 1@1 files
+2025/05/28-14:35:42.752 5 Generated table #117@0: 493 keys, 445745 bytes
+2025/05/28-14:35:42.752 5 Compacted 4@0 + 1@1 files => 445745 bytes
+2025/05/28-14:35:42.853 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/05/28-14:35:42.853 5 Delete type=2 #105
+2025/05/28-14:35:42.853 5 Delete type=2 #108
+2025/05/28-14:35:42.853 5 Delete type=2 #110
+2025/05/28-14:35:42.853 5 Delete type=2 #113
+2025/05/28-14:35:42.853 5 Delete type=2 #116
+2025/05/28-15:07:55.092 5 Level-0 table #119: started
+2025/05/28-15:07:55.117 5 Level-0 table #119: 223661 bytes OK
+2025/05/28-15:07:55.165 5 Delete type=0 #115
+2025/05/28-15:11:55.277 5 Level-0 table #121: started
+2025/05/28-15:11:55.373 5 Level-0 table #121: 43175 bytes OK
+2025/05/28-15:11:55.422 5 Delete type=0 #118

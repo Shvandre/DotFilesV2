@@ -1,0 +1,6 @@
+2025/05/28-19:03:56.986 597 Creating DB /home/b4cksl4sh/.config/google-chrome/Default/IndexedDB/https_gitverse.ru_0.indexeddb.leveldb since it was missing.
+2025/05/28-19:04:01.983 597 Reusing MANIFEST /home/b4cksl4sh/.config/google-chrome/Default/IndexedDB/https_gitverse.ru_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/28-19:49:22.100 56a Level-0 table #5: started
+2025/05/28-19:49:22.125 56a Level-0 table #5: 1839 bytes OK
+2025/05/28-19:49:22.173 56a Delete type=0 #3
+2025/05/28-19:49:22.173 56a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,26 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/icon128.png",
+         "16": "icons/icon16.png",
+         "48": "icons/icon48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "description": "VPN с российским IP для Госуслуг, Кинопоиска, Налоговой и других российских сайтов.",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh6Sv5s96vBBejwWwzyL1P+RyL2UDDH6gzp0Q92atac9jLkD8AKdBTbm/q6DziyoaaHo7ehMprXoOXHz4SZ1PhSlOoVBoOoZcpp2sb6dR7oyiSsV+LI6HUe8jxoloYT9MNEoNOzFXeoTDh3gT0JQY3ZWbJB/xa7jmRsC+za2eWS01YPBMeH3dhl2BgY7mNxxVPplpFd9XVjo+zXSNCvzWg1DFWb0FRbfuQgXKA3wSE+oA6mo+Miae/SehcaYKtqN/WWXYw273b8N9x9PWpi0HKRVgkdgU5pVRykGKLocYbSyD+Wt04h0AqxBCmcVpaU7kWNmSTWiskIBs2f4cee1bRQIDAQAB",
+   "manifest_version": 3,
+   "name": "VPN Наоборот – ВПН с российским IP",
+   "permissions": [ "proxy", "storage", "webRequest", "webRequestAuthProvider" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.2.4"
+}
