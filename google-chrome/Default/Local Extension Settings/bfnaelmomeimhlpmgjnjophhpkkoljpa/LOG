@@ -1,36 +1,12 @@
-2025/05/28-15:19:02.505 597 Reusing MANIFEST /home/b4cksl4sh/.config/google-chrome/Default/Local Extension Settings/bfnaelmomeimhlpmgjnjophhpkkoljpa/MANIFEST-000001
-2025/05/28-15:19:02.724 597 Recovering log #15
-2025/05/28-15:19:03.101 597 Reusing old log /home/b4cksl4sh/.config/google-chrome/Default/Local Extension Settings/bfnaelmomeimhlpmgjnjophhpkkoljpa/000015.log 
-2025/05/28-15:35:50.824 56a Compacting 1@1 + 1@2 files
-2025/05/28-15:35:50.862 56a Generated table #18@1: 17 keys, 801704 bytes
-2025/05/28-15:35:50.862 56a Compacted 1@1 + 1@2 files => 801704 bytes
-2025/05/28-15:35:50.909 56a compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/05/28-15:35:50.910 56a Delete type=2 #13
-2025/05/28-15:35:50.910 56a Delete type=2 #16
-2025/05/28-17:19:32.733 597 Level-0 table #20: started
-2025/05/28-17:19:32.848 597 Level-0 table #20: 1368166 bytes OK
-2025/05/28-17:19:32.897 597 Delete type=0 #15
-2025/05/28-18:10:32.798 56f Compacting 1@1 + 1@2 files
-2025/05/28-18:10:33.078 56f Generated table #21@1: 17 keys, 798875 bytes
-2025/05/28-18:10:33.079 56f Compacted 1@1 + 1@2 files => 798875 bytes
-2025/05/28-18:10:33.126 56f compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/05/28-18:10:33.126 56f Delete type=2 #18
-2025/05/28-18:10:33.126 56f Delete type=2 #20
-2025/05/28-19:22:22.777 56f Level-0 table #23: started
-2025/05/28-19:22:23.102 56f Level-0 table #23: 583735 bytes OK
-2025/05/28-19:22:23.310 56f Delete type=0 #19
-2025/05/28-19:27:43.043 56b Compacting 1@1 + 1@2 files
-2025/05/28-19:27:43.495 56b Generated table #24@1: 17 keys, 800501 bytes
-2025/05/28-19:27:43.495 56b Compacted 1@1 + 1@2 files => 800501 bytes
-2025/05/28-19:27:44.320 56b compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/05/28-19:27:44.320 56b Delete type=2 #21
-2025/05/28-19:27:44.320 56b Delete type=2 #23
-2025/05/28-20:28:18.968 56a Level-0 table #26: started
-2025/05/28-20:28:18.997 56a Level-0 table #26: 585010 bytes OK
-2025/05/28-20:28:19.046 56a Delete type=0 #22
-2025/05/28-20:35:45.337 56b Compacting 1@1 + 1@2 files
-2025/05/28-20:35:45.412 56b Generated table #27@1: 17 keys, 803222 bytes
-2025/05/28-20:35:45.413 56b Compacted 1@1 + 1@2 files => 803222 bytes
-2025/05/28-20:35:45.561 56b compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/05/28-20:35:45.561 56b Delete type=2 #24
-2025/05/28-20:35:45.562 56b Delete type=2 #26
+2025/05/31-22:01:43.723 22ea Reusing MANIFEST /home/b4cksl4sh/.config/google-chrome/Default/Local Extension Settings/bfnaelmomeimhlpmgjnjophhpkkoljpa/MANIFEST-000001
+2025/05/31-22:01:43.724 22ea Recovering log #132
+2025/05/31-22:01:44.517 22ea Reusing old log /home/b4cksl4sh/.config/google-chrome/Default/Local Extension Settings/bfnaelmomeimhlpmgjnjophhpkkoljpa/000132.log 
+2025/05/31-22:01:50.947 22c8 Level-0 table #137: started
+2025/05/31-22:01:53.395 22c8 Level-0 table #137: 545301 bytes OK
+2025/05/31-22:02:00.609 22c8 Delete type=0 #132
+2025/05/31-22:04:14.905 22c5 Compacting 1@1 + 1@2 files
+2025/05/31-22:04:16.974 22c5 Generated table #138@1: 17 keys, 835438 bytes
+2025/05/31-22:04:16.974 22c5 Compacted 1@1 + 1@2 files => 835438 bytes
+2025/05/31-22:04:21.215 22c5 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/05/31-22:04:21.215 22c5 Delete type=2 #134
+2025/05/31-22:04:21.215 22c5 Delete type=2 #137

@@ -1,33 +1,15 @@
-2025/05/28-15:18:24.443 5 Reusing MANIFEST /home/b4cksl4sh/.config/google-chrome/Default/Session Storage/MANIFEST-000001
-2025/05/28-15:18:25.189 5 Recovering log #29
-2025/05/28-15:18:25.912 5 Reusing old log /home/b4cksl4sh/.config/google-chrome/Default/Session Storage/000029.log 
-2025/05/28-17:19:18.262 5 Level-0 table #34: started
-2025/05/28-17:19:18.286 5 Level-0 table #34: 23525 bytes OK
-2025/05/28-17:19:18.334 5 Delete type=0 #29
-2025/05/28-18:58:13.853 5 Level-0 table #36: started
-2025/05/28-18:58:16.137 5 Level-0 table #36: 146319 bytes OK
-2025/05/28-18:58:21.660 5 Delete type=0 #33
-2025/05/28-18:59:02.612 5 Level-0 table #38: started
-2025/05/28-18:59:03.746 5 Level-0 table #38: 62968 bytes OK
-2025/05/28-18:59:04.720 5 Delete type=0 #35
-2025/05/28-19:37:26.649 5 Level-0 table #40: started
-2025/05/28-19:37:26.726 5 Level-0 table #40: 21903 bytes OK
-2025/05/28-19:37:26.825 5 Delete type=0 #37
-2025/05/28-19:37:26.826 5 Compacting 4@0 + 1@1 files
-2025/05/28-19:37:26.915 5 Generated table #41@0: 2630 keys, 257805 bytes
-2025/05/28-19:37:26.915 5 Compacted 4@0 + 1@1 files => 257805 bytes
-2025/05/28-19:37:26.963 5 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/05/28-19:37:26.964 5 Delete type=2 #31
-2025/05/28-19:37:26.964 5 Delete type=2 #34
-2025/05/28-19:37:26.964 5 Delete type=2 #36
-2025/05/28-19:37:26.964 5 Delete type=2 #38
-2025/05/28-19:37:26.964 5 Delete type=2 #40
-2025/05/28-20:38:48.172 5 Level-0 table #43: started
-2025/05/28-20:38:50.782 5 Level-0 table #43: 81760 bytes OK
-2025/05/28-20:38:53.003 5 Delete type=0 #39
-2025/05/28-20:39:23.461 5 Level-0 table #45: started
-2025/05/28-20:39:25.184 5 Level-0 table #45: 65694 bytes OK
-2025/05/28-20:39:28.138 5 Delete type=0 #42
-2025/05/28-22:05:11.216 4 Level-0 table #47: started
-2025/05/28-22:05:13.258 4 Level-0 table #47: 18634 bytes OK
-2025/05/28-22:05:17.061 4 Delete type=0 #44
+2025/05/31-22:01:37.634 4 Reusing MANIFEST /home/b4cksl4sh/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2025/05/31-22:01:37.635 4 Recovering log #77
+2025/05/31-22:01:37.872 4 Reusing old log /home/b4cksl4sh/.config/google-chrome/Default/Session Storage/000077.log 
+2025/05/31-22:04:17.101 5 Level-0 table #81: started
+2025/05/31-22:04:20.382 5 Level-0 table #81: 161568 bytes OK
+2025/05/31-22:04:22.012 5 Delete type=0 #77
+2025/05/31-22:04:22.012 5 Compacting 4@0 + 1@1 files
+2025/05/31-22:04:22.584 5 Generated table #82@0: 4610 keys, 256848 bytes
+2025/05/31-22:04:22.584 5 Compacted 4@0 + 1@1 files => 256848 bytes
+2025/05/31-22:04:24.943 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/05/31-22:04:24.944 5 Delete type=2 #72
+2025/05/31-22:04:24.944 5 Delete type=2 #74
+2025/05/31-22:04:24.944 5 Delete type=2 #76
+2025/05/31-22:04:24.944 5 Delete type=2 #78
+2025/05/31-22:04:24.944 5 Delete type=2 #81

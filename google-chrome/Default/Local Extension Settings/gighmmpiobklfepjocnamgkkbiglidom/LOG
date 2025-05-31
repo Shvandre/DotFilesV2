@@ -1,21 +1,9 @@
-2025/05/28-15:18:50.401 597 Reusing MANIFEST /home/b4cksl4sh/.config/google-chrome/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/MANIFEST-000001
-2025/05/28-15:18:50.536 597 Recovering log #48
-2025/05/28-15:18:51.098 597 Reusing old log /home/b4cksl4sh/.config/google-chrome/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/000048.log 
-2025/05/28-16:39:35.117 56b Level-0 table #54: started
-2025/05/28-16:39:35.367 56b Level-0 table #54: 1244526 bytes OK
-2025/05/28-16:39:35.415 56b Delete type=0 #48
-2025/05/28-16:41:36.098 56a Compacting 1@1 + 1@2 files
-2025/05/28-16:41:36.311 56a Generated table #55@1: 38 keys, 263087 bytes
-2025/05/28-16:41:36.311 56a Compacted 1@1 + 1@2 files => 263087 bytes
-2025/05/28-16:41:36.660 56a compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/05/28-16:41:36.660 56a Delete type=2 #51
-2025/05/28-16:41:36.660 56a Delete type=2 #54
-2025/05/28-19:34:10.822 56b Level-0 table #57: started
-2025/05/28-19:34:11.175 56b Level-0 table #57: 1244834 bytes OK
-2025/05/28-19:34:11.324 56b Delete type=0 #53
-2025/05/28-19:40:27.203 56a Compacting 1@1 + 1@2 files
-2025/05/28-19:40:27.858 56a Generated table #58@1: 38 keys, 265575 bytes
-2025/05/28-19:40:27.858 56a Compacted 1@1 + 1@2 files => 265575 bytes
-2025/05/28-19:40:27.956 56a compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/05/28-19:40:27.956 56a Delete type=2 #55
-2025/05/28-19:40:27.956 56a Delete type=2 #57
+2025/05/31-22:01:43.021 22f1 Reusing MANIFEST /home/b4cksl4sh/.config/google-chrome/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/MANIFEST-000001
+2025/05/31-22:01:43.021 22f1 Recovering log #94
+2025/05/31-22:01:43.052 22f1 Reusing old log /home/b4cksl4sh/.config/google-chrome/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/000094.log 
+2025/05/31-22:04:21.415 22e9 Compacting 1@1 + 1@2 files
+2025/05/31-22:04:22.011 22e9 Generated table #97@1: 39 keys, 160247 bytes
+2025/05/31-22:04:22.011 22e9 Compacted 1@1 + 1@2 files => 160247 bytes
+2025/05/31-22:04:22.434 22e9 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/05/31-22:04:22.434 22e9 Delete type=2 #92
+2025/05/31-22:04:22.434 22e9 Delete type=2 #95

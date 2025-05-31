@@ -1,2 +1,13 @@
+@define-color background     #1a1b26;    /* Deep navy-black background */
+@define-color background-sec #24283b;    /* Slightly lighter background */
+@define-color foreground    #c0caf5;    /* Soft blue-white text color */
+
+@define-color color1        #bb9af7;    /* Soft purple for backgrounds */
+@define-color color2        #f7768e;    /* Warm pink for urgent/critical */
+@define-color color3        #7aa2f7;    /* Azure blue for selected items */
+@define-color color4        #e0af68;    /* Warm orange for warnings */
+@define-color color5        #9ece6a;    /* Sage green for success */
+@define-color color6        #2ac3de;    /* Cyan for highlights */
+
 @import 'themes/nova-dark/notifications.css';
 @import 'themes/nova-dark/central_control.css';
