@@ -1,1 +1,0 @@
-import{j as e,cJ as o}from"./main.BJ1Zz46B.js";import{u as s}from"./useSwapMobileNotification.i_qU80ol.js";const n=()=>{const[r,t]=s();return t(!0),e.jsx(o,{to:"..",replace:!0})};export{n as default};

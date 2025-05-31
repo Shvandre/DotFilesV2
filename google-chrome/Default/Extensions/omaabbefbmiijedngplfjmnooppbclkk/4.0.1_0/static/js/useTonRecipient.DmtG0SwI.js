@@ -1,1 +1,0 @@
-import{aZ as a,r as t,fq as u,bS as i,a$ as f}from"./main.BJ1Zz46B.js";function p(e){const o=a(),n=t.useRef(!0),{isLoading:c,data:s,mutate:r}=u();return t.useEffect(()=>{n.current=!1,r({address:e})},[e]),{recipient:t.useMemo(()=>({address:{address:f(e,o,!0),blockchain:i.TON},comment:"",done:!1,toAccount:s}),[s,o]),isLoading:n.current?!0:c}}export{p as u};
